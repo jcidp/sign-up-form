@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@font-face {
+    font-family: Pacifico-Regular;
+    src: url(Pacifico-Regular.ttf);
+}
+
+:root {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+body {
+    display: flex;
+    margin: 0;
+    height: 100vh;
+    background-color: lightgray;
+}
+
+header {
+    flex-shrink: 0;
+    flex-basis: clamp(15em, 40%, 40em);
+    background-image: url("personal-finance.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.logo-section {
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 20%;
+    width: 100%;
+}
+
+img {
+    display: inline;
+    max-width: 100px;
+}
+
+h1 {
+    display: inline;
+    font-family: Pacifico-Regular;
+    font-size: 3em;
+    color: white;
+}
+
+#photo-by {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+#photo-by>a {
+    color: black;
+}
+
+main {
+    margin: auto 0;
+}
+
+main>p, button {
+    margin: 1.5em;
+}
+
+fieldset {
+    background-color: white;
+    border: none;
+    margin: 0;
+    padding: 1.5em;
+}
+
+h2 {
+    margin: 0;
+}
+
+label {
+    display: block;
+}
