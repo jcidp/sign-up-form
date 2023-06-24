@@ -7,14 +7,18 @@
 :root {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
-    /* TODO: Add variables for: max text ch width, colors*/
+    --bg-color: rgb(227, 217, 217);
+    --form-bg-color: white;
+    --cta-color: rgb(255, 51, 0);
+    --input-focus-color: blue;
+    --error-color: red;
 }
 
 body {
     display: flex;
     margin: 0;
     height: 100vh;
-    background-color: lightgray;
+    background-color: var(--bg-color);
 }
 
 header {
@@ -28,7 +32,9 @@ header {
 
 .logo-section {
     background-color: rgba(0, 0, 0, 0.6);
-    margin-top: 40%;
+    position: absolute;
+    top: 20%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -74,7 +80,7 @@ main>p {
 }
 
 fieldset {
-    background-color: white;
+    background-color: var(--form-bg-color);
     border: none;
     margin: 0;
     padding: 1.5em;
@@ -121,7 +127,7 @@ form + p {
 }
 
 button {
-    background-color: orangered;
+    background-color: var(--cta-color);
     color: white;
     border-style: none;
     border-radius: 0.5em;
@@ -129,7 +135,7 @@ button {
 }
 
 #login {
-    color: orangered;
+    color: var(--cta-color);
     font-weight: bold;
 }
 
@@ -140,14 +146,14 @@ input {
 
 input:focus {
     outline: none;
-    border: 1px solid blue;
-    box-shadow: 0.125em 0.125em 0.5em -0.25em blue;
+    border: 1px solid var(--input-focus-color);
+    box-shadow: 0.125em 0.125em 0.5em -0.25em var(--input-focus-color);
 }
 
 .error, .error:focus {
-    border-color: red;
+    border-color: var(--error-color);
 }
 
 .error-msg {
-    color: red;
+    color: var(--error-color);
 }
