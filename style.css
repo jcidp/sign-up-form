@@ -97,7 +97,8 @@ ul {
 }
 
 li {
-    font-size: 0.75em;
+    font-size: 0.6875em;
+    font-weight: bold;
     list-style-type: none;
     padding: 1em 0;
     flex: 1 0 45%;
@@ -113,8 +114,9 @@ input {
 }
 
 form + p {
+    font-size: 0.75em;
     margin-top: 0;
-    font-weight: 100;
+    font-weight: 400;
     margin-bottom: 0;
 }
 
@@ -128,4 +130,24 @@ button {
 
 #login {
     color: orangered;
+    font-weight: bold;
+}
+
+input {
+    border: 1px solid #E5E7EB;
+    border-radius: 0.25em;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid blue;
+    box-shadow: 0.125em 0.125em 0.5em -0.25em blue;
+}
+
+.error, .error:focus {
+    border-color: red;
+}
+
+.error-msg {
+    color: red;
 }
